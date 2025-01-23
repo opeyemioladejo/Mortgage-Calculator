@@ -59,7 +59,7 @@ form {
 .input-info {
     display: flex;
     align-items: center;
-    border-radius: 5px;
+    width: 100%;
 }
 
 .input-info span {
@@ -75,19 +75,16 @@ input {
 }
 
 
-.first-input{
+input.first-input {
+    flex: 1;
     border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .second-input{
     border: none;
-}
-
-
-.input-info {
-    display: flex;
-    align-items: center;
-    
 }
 
 .input-info span {
@@ -157,7 +154,7 @@ input {
 
 .calculator-image {
     background-color: #073642;
-    border-radius: 0 0 0 50px;
+    border-radius: 0 10px 10px 50px;
     color: white;
     text-align: center;
     padding: 20px;
@@ -184,4 +181,91 @@ input {
 .first-icon {
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.years {
+    margin-left: auto;
+    margin-right: -4px;
+}
+
+.percent {
+    margin-left: auto;
+    margin-right: -4px;
+}
+
+@media screen and (min-width: 385px) and (max-width: 720px) {
+    .calculator {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 10px;
+    }
+
+    .calculator-form {
+        padding: 15px;
+    }
+
+    .calculator-image {
+        border-radius: 0 0 10px 10px;
+        padding: 15px;
+    }
+
+    .form-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-section {
+        width: 100px;
+        height: 30px;
+        display: flex;
+    }
+
+    .results-info h2 {
+        font-size: 24px;
+    }
+    
+    .results-info p {
+        font-size: 18px;
+        display: block;
+        line-height: 1px;
+    }
+    
+    .results-info p br {
+        display: block;
+    }
+
+    .form-section .input-info {
+        display: flex;
+    }
+
+    .years {
+        margin-left: auto;
+    }
+
+    .percent {
+        margin-left: auto
+    }
+
+    .second-input{
+        width: 242px;
+    }
+
+    .results-image {
+        width: 50%;
+        height: auto;
+        position: center;
+        margin: auto;
+        margin-bottom: 2%;
+        margin-top: 3%;
+    }
+
+    .calculator-image {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .results-info pre{
+        padding: 10px;
+    }
+
 }
