@@ -81,6 +81,7 @@ input.first-input {
     outline: none;
     padding: 10px;
     font-size: 14px;
+    width: 80%;
 }
 
 .second-input{
@@ -216,7 +217,7 @@ input.first-input {
     }
 
     .button-section {
-        width: 100px;
+        width: 75%;
         height: 30px;
         display: flex;
     }
@@ -244,11 +245,11 @@ input.first-input {
     }
 
     .percent {
-        margin-left: auto
+        margin-left: auto;
     }
 
     .second-input{
-        width: 242px;
+        width: 85%;
     }
 
     .results-image {
